@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  web-profil:
+    build: .
+    # Ganti 'username_dockerhub_anda' dengan username Docker Hub Anda yang asli
+    image: nisaaprilia/251572010043-dieria:latest
+    container_name: container_dieria
+    ports:
+      # Port 8081 disesuaikan dengan port unik Anda agar tidak bentrok dengan kelompok
+      - "8081:80"
+    restart: always
